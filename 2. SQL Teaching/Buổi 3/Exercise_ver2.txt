@@ -1,0 +1,50 @@
+Phần 1: SELECT và Lọc dữ liệu cơ bản
+1.  Lấy tất cả thông tin sản phẩm (SELECT, FROM)
+* Viết một truy vấn để chọn tất cả các cột và tất cả các dòng từ bảng Products.
+
+2.  Tìm khách hàng cụ thể (WHERE, =)
+* Viết một truy vấn để tìm first_name, last_name, và email của khách hàng có customer_id = 3.
+
+3.  Tìm các sản phẩm đắt tiền (WHERE, >)
+* Viết một truy vấn để liệt kê product_name và unit_price của tất cả các sản phẩm có giá hơn $100.
+
+4.  Liệt kê các ID khách hàng duy nhất từ các đơn hàng (SELECT DISTINCT)
+* Viết một truy vấn để hiển thị ID duy nhất của những khách hàng đã đặt hàng. Mỗi customer_id chỉ nên xuất hiện một lần.
+
+Phần 2: Lọc nâng cao và Sắp xếp
+5.  Tìm các đơn hàng gần đây (BETWEEN, AND)
+* Viết một truy vấn để tìm tất cả các đơn hàng (order_id, customer_id, order_date) được đặt trong khoảng thời gian từ ngày 15 tháng 6 năm 2025 đến ngày 5 tháng 7 năm 2025.
+
+6.  Tìm khách hàng từ một danh sách (IN)
+* Viết một truy vấn để lấy thông tin chi tiết đầy đủ của các khách hàng có customer_id là 1, 4, hoặc 7.
+
+7.  Tìm khách hàng có họ 'Le' (LIKE)
+* Viết một truy vấn để tìm first_name và last_name của tất cả các khách hàng có last_name là 'Le'.
+
+8.  Tìm khách hàng không có số điện thoại (IS NULL)
+* Viết một truy vấn để liệt kê họ tên đầy đủ và email của tất cả các khách hàng có cột phone_number là NULL.
+
+9.  Sắp xếp sản phẩm theo giá (ORDER BY)
+* Viết một truy vấn để liệt kê tất cả các sản phẩm, được sắp xếp từ đắt nhất đến rẻ nhất. Trong trường hợp bằng giá, hãy sắp xếp theo product_name theo thứ tự bảng chữ cái.
+
+10. Tìm 5 đơn hàng được đặt gần đây nhất (LIMIT)
+* Viết một truy vấn để hiển thị 5 đơn hàng gần đây nhất dựa trên order_date.
+
+Phần 3: Joins và Tổng hợp dữ liệu
+11. Liệt kê các đơn hàng kèm theo tên khách hàng (INNER JOIN)
+* Viết một truy vấn để hiển thị order_id, order_date, và first_name, last_name của khách hàng cho mỗi đơn hàng.
+
+12. Tìm tổng doanh thu cho mỗi đơn hàng (GROUP BY, SUM, JOIN)
+* Viết một truy vấn để tính tổng số tiền cho mỗi đơn hàng. Kết quả phải hiển thị order_id và total_amount. (Gợi ý: total_amount là quantity * list_price).
+
+13. Liệt kê tất cả khách hàng và số lượng đơn hàng của họ (LEFT JOIN, COUNT)
+* Viết một truy vấn để liệt kê họ tên đầy đủ của tất cả khách hàng và tổng số đơn hàng họ đã đặt. Bao gồm cả những khách hàng chưa bao giờ đặt hàng (số lượng đơn hàng của họ phải là 0).
+
+14. Liệt kê tất cả sản phẩm và danh mục của chúng (RIGHT JOIN)
+* Sử dụng RIGHT JOIN, viết một truy vấn liệt kê tên của mọi sản phẩm (product_name) và tên danh mục (category_name) tương ứng. Đảm bảo tất cả các sản phẩm đều được liệt kê, ngay cả khi chúng không được gán vào danh mục nào.
+
+15. Hiển thị chi tiết đầy đủ của đơn hàng (JOIN nhiều bảng)
+* Đối với mỗi mặt hàng trong mỗi đơn hàng, hãy hiển thị order_id, họ tên đầy đủ của khách hàng, tên sản phẩm, số lượng đặt hàng, họ tên đầy đủ của nhân viên đã xử lý đơn hàng, và tên của nhà vận chuyển.
+* Bao gồm cả những đơn hàng chưa được gán nhà vận chuyển (cột shipper_name phải là NULL cho những đơn hàng này).
+
+16. Hiển thị chi tiết đầy đủ của đơn hàng số 4: tên khách hàng, tên nhân viên xử lý, tên sản phẩm, số lượng, và tên nhà vận chuyển.

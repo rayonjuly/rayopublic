@@ -1,0 +1,159 @@
+-- =====================================================================
+-- E-Commerce Practice Schema for SQL Teaching
+-- Database: store_db
+-- Designed for MySQL
+-- =====================================================================
+
+-- Drop the database if it exists to start fresh
+DROP DATABASE IF EXISTS store_db;
+CREATE DATABASE store_db;
+USE store_db;
+
+-- -----------------------------------------------------
+-- Table `Categories`
+-- Stores product categories.
+-- -----------------------------------------------------
+CREATE TABLE Categories (
+    category_id INT AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(255) NOT NULL
+);
+
+-- -----------------------------------------------------
+-- Table `Shippers`
+-- Stores information about shipping companies.
+-- -----------------------------------------------------
+CREATE TABLE Shippers (
+    shipper_id INT AUTO_INCREMENT PRIMARY KEY,
+    shipper_name VARCHAR(255) NOT NULL,
+    phone VARCHAR(50)
+);
+
+-- -----------------------------------------------------
+-- Table `Customers`
+-- Stores customer data. Note that phone_number can be NULL.
+-- -----------------------------------------------------
+CREATE TABLE Customers (
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    phone_number VARCHAR(50), -- Can be NULL
+    registration_date DATE NOT NULL
+);
+
+-- -----------------------------------------------------
+-- Table `Products`
+-- Stores product information. Each product belongs to a category.
+-- -----------------------------------------------------
+CREATE TABLE Products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    unit_price DECIMAL(10, 2) NOT NULL,
+    category_id INT,
+    FOREIGN KEY (category_id) REFERENCES Categories(category_id)
+);
+
+-- -----------------------------------------------------
+-- Table `Orders`
+-- Stores order header information.
+-- `shipped_date` can be NULL if the order has not been shipped.
+-- -----------------------------------------------------
+CREATE TABLE Orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT NOT NULL,
+    order_date DATE NOT NULL,
+    shipped_date DATE, -- Can be NULL
+    shipper_id INT,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+    FOREIGN KEY (shipper_id) REFERENCES Shippers(shipper_id)
+);
+
+-- -----------------------------------------------------
+-- Table `Order_Items`
+-- This is a junction table linking Orders and Products.
+-- It stores details for each product within an order.
+-- -----------------------------------------------------
+CREATE TABLE Order_Items (
+    order_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity INT NOT NULL,
+    list_price DECIMAL(10, 2) NOT NULL, -- Price at the time of order
+    PRIMARY KEY (order_id, product_id),
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+
+-- =====================================================================
+-- POPULATE TABLES WITH SAMPLE DATA
+-- =====================================================================
+
+-- Populate Categories
+INSERT INTO Categories (category_name) VALUES
+('Electronics'),
+('Books'),
+('Home & Kitchen'),
+('Clothing');
+
+-- Populate Shippers
+INSERT INTO Shippers (shipper_name, phone) VALUES
+('Giaohangnhanh', '1900 636677'),
+('Viettel Post', '1900 8095'),
+('VNPost', '1900 545481');
+
+-- Populate Customers
+INSERT INTO Customers (first_name, last_name, email, phone_number, registration_date) VALUES
+('Minh', 'Nguyen', 'minh.nguyen@example.com', '0912345678', '2024-01-15'),
+('Linh', 'Tran', 'linh.tran@example.com', NULL, '2024-02-20'),
+('Hoang', 'Le', 'hoang.le@example.com', '0987654321', '2024-03-10'),
+('Trang', 'Pham', 'trang.pham@example.com', '0905112233', '2024-04-05'),
+('Dung', 'Vo', 'dung.vo@example.com', NULL, '2024-05-21'); -- This customer has no orders yet
+
+-- Populate Products
+INSERT INTO Products (product_name, unit_price, category_id) VALUES
+('Laptop Dell XPS 15', 2500.00, 1),
+('Smartphone Samsung Galaxy S25', 1200.00, 1),
+('Dac Nhan Tam', 15.00, 2),
+('Nha Gia Kim', 20.00, 2),
+('Air Fryer Philips', 150.00, 3),
+('Blender Panasonic', 75.00, 3),
+('Men\'s T-Shirt', 25.00, 4),
+('Women\'s Dress', 50.00, 4),
+('Bluetooth Headphones Sony', 250.00, 1),
+('History of the World', 40.00, 2); -- This product has not been sold yet
+
+-- Populate Orders
+-- Note the NULL values for shipped_date and shipper_id for recent/pending orders
+INSERT INTO Orders (customer_id, order_date, shipped_date, shipper_id) VALUES
+(1, '2025-06-10', '2025-06-12', 1),
+(2, '2025-06-11', '2025-06-14', 2),
+(1, '2025-06-25', '2025-06-28', 1),
+(3, '2025-06-28', '2025-07-01', 3),
+(2, '2025-07-01', NULL, NULL), -- Order not shipped yet
+(4, '2025-07-02', NULL, NULL); -- Order not shipped yet
+
+-- Populate Order_Items
+-- Order 1
+INSERT INTO Order_Items (order_id, product_id, quantity, list_price) VALUES
+(1, 1, 1, 2500.00),
+(1, 3, 2, 15.00);
+-- Order 2
+INSERT INTO Order_Items (order_id, product_id, quantity, list_price) VALUES
+(2, 5, 1, 150.00),
+(2, 7, 3, 25.00);
+-- Order 3
+INSERT INTO Order_Items (order_id, product_id, quantity, list_price) VALUES
+(3, 2, 1, 1200.00);
+-- Order 4
+INSERT INTO Order_Items (order_id, product_id, quantity, list_price) VALUES
+(4, 4, 1, 20.00),
+(4, 8, 1, 50.00),
+(4, 6, 1, 75.00);
+-- Order 5
+INSERT INTO Order_Items (order_id, product_id, quantity, list_price) VALUES
+(5, 7, 5, 25.00);
+-- Order 6
+INSERT INTO Order_Items (order_id, product_id, quantity, list_price) VALUES
+(6, 1, 1, 2500.00),
+(6, 9, 1, 250.00);
+

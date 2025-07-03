@@ -1,0 +1,51 @@
+SQL Practice Exercises
+Here are 15 exercises designed to test understanding of basic to intermediate SQL concepts using the provided store_db database.
+
+Part 1: Basic SELECT and Filtering
+1.  Retrieve All Product Information (SELECT, FROM)
+* Write a query to select all columns and all rows from the Products table.
+
+2.  Find Specific Customers (WHERE, =)
+* Write a query to find the first name, last name, and email of the customer with customer_id = 3.
+
+3.  Find Expensive Products (WHERE, >)
+* Write a query to list the product_name and unit_price of all products that cost more than $100.
+
+4.  List Unique Customer IDs from Orders (SELECT DISTINCT)
+* Write a query to show the unique IDs of customers who have placed an order. Each customer ID should appear only once.
+
+Part 2: Advanced Filtering and Sorting
+5.  Find Recent Orders (BETWEEN, AND)
+* Write a query to find all orders (order_id, customer_id, order_date) placed between June 15, 2025, and July 5, 2025.
+
+6.  Find Customers from a List (IN)
+* Write a query to retrieve the full details of customers with customer_id 1, 4, or 7.
+
+7.  Find Customers with 'Le' in their Last Name (LIKE)
+* Write a query to find the first_name and last_name of all customers whose last name is 'Le'.
+
+8.  Find Customers Without a Phone Number (IS NULL)
+* Write a query to list the full names and emails of all customers who do not have a phone number listed.
+
+9.  Sort Products by Price (ORDER BY)
+* Write a query to list all products, ordered from the most expensive to the cheapest. In case of a tie in price, sort by product_name alphabetically.
+
+10. Find the 5 Most Recently Placed Orders (LIMIT)
+* Write a query to show the 5 most recent orders based on order_date.
+
+Part 3: Joins and Aggregation
+11. List Orders with Customer Names (INNER JOIN)
+* Write a query to show the order_id, order_date, and the first_name and last_name of the customer for each order.
+
+12. Find the Total Revenue for Each Order (GROUP BY, SUM, JOIN)
+* Write a query to calculate the total amount for each order. The result should show order_id and total_amount. (Hint: total_amount is quantity * list_price).
+
+13. List All Customers and Their Order Counts (LEFT JOIN, COUNT)
+* Write a query to list all customers' full names and the total number of orders they have placed. Include customers who have never placed an order (their count should be 0).
+
+14. List All Products and Their Categories (RIGHT JOIN)
+* Using a RIGHT JOIN, write a query that lists every product's name and its corresponding category name. Ensure all products are listed, even if they don't have a category assigned.
+
+15. Show Full Order Details (JOIN multiple tables)
+* For every item in every order, display the order_id, the customer's full name, the product's name, the quantity ordered, the employee's full name who handled the order, and the shipper's name.
+* Include orders that have not yet been assigned a shipper (the shipper name should be NULL for these).

@@ -1,0 +1,225 @@
+-- =====================================================================
+-- E-Commerce Practice Schema for SQL Teaching (Greatly Expanded Version)
+-- Database: store_db
+-- Designed for MySQL
+-- =====================================================================
+
+-- Drop the database if it exists to start fresh
+DROP DATABASE IF EXISTS store_db;
+CREATE DATABASE store_db;
+USE store_db;
+
+-- -----------------------------------------------------
+-- Table `Categories`
+-- -----------------------------------------------------
+CREATE TABLE Categories (
+    category_id INT AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(255) NOT NULL
+);
+
+-- -----------------------------------------------------
+-- Table `Shippers`
+-- -----------------------------------------------------
+CREATE TABLE Shippers (
+    shipper_id INT AUTO_INCREMENT PRIMARY KEY,
+    shipper_name VARCHAR(255) NOT NULL,
+    phone VARCHAR(50)
+);
+
+-- -----------------------------------------------------
+-- Table `Customers`
+-- -----------------------------------------------------
+CREATE TABLE Customers (
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    phone_number VARCHAR(50),
+    registration_date DATE NOT NULL
+);
+
+-- -----------------------------------------------------
+-- Table `Employees`
+-- -----------------------------------------------------
+CREATE TABLE Employees (
+    employee_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    hire_date DATE NOT NULL,
+    reports_to INT, -- Manager's employee_id (self-referencing key)
+    FOREIGN KEY (reports_to) REFERENCES Employees(employee_id)
+);
+
+
+-- -----------------------------------------------------
+-- Table `Products`
+-- -----------------------------------------------------
+CREATE TABLE Products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    unit_price DECIMAL(10, 2) NOT NULL,
+    category_id INT,
+    FOREIGN KEY (category_id) REFERENCES Categories(category_id)
+);
+
+-- -----------------------------------------------------
+-- Table `Orders`
+-- -----------------------------------------------------
+CREATE TABLE Orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT NOT NULL,
+    employee_id INT,
+    order_date DATE NOT NULL,
+    shipped_date DATE,
+    shipper_id INT,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+    FOREIGN KEY (shipper_id) REFERENCES Shippers(shipper_id),
+    FOREIGN KEY (employee_id) REFERENCES Employees(employee_id)
+);
+
+-- -----------------------------------------------------
+-- Table `Order_Items`
+-- -----------------------------------------------------
+CREATE TABLE Order_Items (
+    order_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity INT NOT NULL,
+    list_price DECIMAL(10, 2) NOT NULL,
+    PRIMARY KEY (order_id, product_id),
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+
+-- =====================================================================
+-- POPULATE TABLES WITH MASSIVE SAMPLE DATA
+-- =====================================================================
+
+-- Populate Categories
+INSERT INTO Categories (category_id, category_name) VALUES
+(1, 'Electronics'), (2, 'Books'), (3, 'Home & Kitchen'), (4, 'Clothing'), (5, 'Toys & Games'),
+(6, 'Sports & Outdoors'), (7, 'Health & Beauty'), (8, 'Automotive'), (9, 'Garden & Tools'), (10, 'Pet Supplies');
+
+-- Populate Shippers
+INSERT INTO Shippers (shipper_id, shipper_name, phone) VALUES
+(1, 'Giaohangnhanh', '1900 636677'), (2, 'Viettel Post', '1900 8095'), (3, 'VNPost', '1900 545481'),
+(4, 'J&T Express', '1900 1088'), (5, 'BEST Express', '1900 1031');
+
+-- Populate Employees (30+ rows)
+INSERT INTO Employees (employee_id, first_name, last_name, hire_date, reports_to) VALUES
+(1, 'An', 'Nguyen', '2022-01-10', NULL), (2, 'Binh', 'Tran', '2022-01-10', NULL),
+(3, 'Cuong', 'Le', '2022-03-15', 1), (4, 'Dung', 'Pham', '2022-03-15', 1),
+(5, 'Giang', 'Vo', '2022-03-20', 2), (6, 'Hanh', 'Do', '2022-03-20', 2),
+(7, 'Khanh', 'Bui', '2023-05-20', 3), (8, 'Lien', 'Dang', '2023-05-20', 3),
+(9, 'Mai', 'Hoang', '2023-06-01', 4), (10, 'Nam', 'Ngo', '2023-06-01', 4),
+(11, 'Oanh', 'Vu', '2023-07-15', 5), (12, 'Phuc', 'Dinh', '2023-07-15', 5),
+(13, 'Quan', 'Ly', '2024-01-01', 6), (14, 'Son', 'Trinh', '2024-01-01', 6),
+(15, 'Thao', 'Phan', '2024-02-10', 7), (16, 'Tuan', 'Ha', '2024-02-10', 7),
+(17, 'Uyen', 'Doan', '2024-03-05', 8), (18, 'Viet', 'Luu', '2024-03-05', 8),
+(19, 'Xuan', 'Truong', '2024-04-12', 9), (20, 'Yen', 'Dao', '2024-04-12', 9),
+(21, 'Thanh', 'Lam', '2024-05-18', 10), (22, 'Linh', 'Ma', '2024-05-18', 10),
+(23, 'Huy', 'Cao', '2024-06-20', 11), (24, 'My', 'Duong', '2024-06-20', 11),
+(25, 'Khai', 'Nguyen', '2024-07-01', 12), (26, 'Nga', 'Tran', '2024-07-01', 12),
+(27, 'Phong', 'Le', '2024-08-15', 13), (28, 'Quynh', 'Pham', '2024-08-15', 13),
+(29, 'Tai', 'Vo', '2024-09-01', 14), (30, 'Van', 'Do', '2024-09-01', 14);
+
+-- Populate Customers (30+ rows)
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number, registration_date) VALUES
+(1, 'Minh', 'Nguyen', 'minh.nguyen@example.com', '0912345678', '2024-01-15'), (2, 'Linh', 'Tran', 'linh.tran@example.com', NULL, '2024-02-20'),
+(3, 'Hoang', 'Le', 'hoang.le@example.com', '0987654321', '2024-03-10'), (4, 'Trang', 'Pham', 'trang.pham@example.com', '0905112233', '2024-04-05'),
+(5, 'Dung', 'Vo', 'dung.vo@example.com', NULL, '2024-05-21'), (6, 'Anh', 'Bui', 'anh.bui@example.com', '0911223344', '2024-06-01'),
+(7, 'Tuan', 'Do', 'tuan.do@example.com', '0922334455', '2024-07-18'), (8, 'Huong', 'Dang', 'huong.dang@example.com', NULL, '2024-08-22'),
+(9, 'Bach', 'Duong', 'bach.duong@example.com', '0933445566', '2024-09-11'), (10, 'Chau', 'Ngo', 'chau.ngo@example.com', '0944556677', '2024-10-02'),
+(11, 'Dat', 'Vu', 'dat.vu@example.com', NULL, '2024-11-19'), (12, 'Hang', 'Dinh', 'hang.dinh@example.com', '0955667788', '2024-12-25'),
+(13, 'Hieu', 'Ly', 'hieu.ly@example.com', '0966778899', '2025-01-03'), (14, 'Kim', 'Trinh', 'kim.trinh@example.com', NULL, '2025-02-14'),
+(15, 'Lan', 'Phan', 'lan.phan@example.com', '0977889900', '2025-03-08'), (16, 'Manh', 'Ha', 'manh.ha@example.com', '0988990011', '2025-04-17'),
+(17, 'Ngoc', 'Doan', 'ngoc.doan@example.com', '0999001122', '2025-05-01'), (18, 'Phuong', 'Luu', 'phuong.luu@example.com', NULL, '2025-06-06'),
+(19, 'Quyen', 'Truong', 'quyen.truong@example.com', '0912112233', '2025-06-15'), (20, 'Sang', 'Dao', 'sang.dao@example.com', '0923223344', '2025-06-28'),
+(21, 'Thuy', 'Lam', 'thuy.lam@example.com', NULL, '2025-07-04'), (22, 'Tien', 'Ma', 'tien.ma@example.com', '0934334455', '2025-07-10'),
+(23, 'Tung', 'Cao', 'tung.cao@example.com', '0945445566', '2025-07-15'), (24, 'Vy', 'Duong', 'vy.duong@example.com', NULL, '2025-07-20'),
+(25, 'Yen', 'Nguyen', 'yen.nguyen@example.com', '0956556677', '2025-07-22'), (26, 'Bao', 'Tran', 'bao.tran@example.com', '0967667788', '2025-07-25'),
+(27, 'Chi', 'Le', 'chi.le@example.com', NULL, '2025-07-28'), (28, 'Duc', 'Pham', 'duc.pham@example.com', '0978778899', '2025-08-01'),
+(29, 'Gia', 'Vo', 'gia.vo@example.com', '0989889900', '2025-08-02'), (30, 'Hai', 'Do', 'hai.do@example.com', NULL, '2025-08-03'),
+(31, 'Khoa', 'Bui', 'khoa.bui@example.com', '0913456789', '2025-08-04'), (32, 'Luan', 'Dang', 'luan.dang@example.com', '0924567890', '2025-08-05');
+
+-- Populate Products (40+ rows)
+INSERT INTO Products (product_id, product_name, unit_price, category_id) VALUES
+(1, 'Laptop Dell XPS 15', 2500.00, 1), (2, 'Smartphone Samsung Galaxy S25', 1200.00, 1), (3, 'Dac Nhan Tam', 15.00, 2),
+(4, 'Nha Gia Kim', 20.00, 2), (5, 'Air Fryer Philips', 150.00, 3), (6, 'Blender Panasonic', 75.00, 3),
+(7, 'Men\'s T-Shirt', 25.00, 4), (8, 'Women\'s Dress', 50.00, 4), (9, 'Bluetooth Headphones Sony', 250.00, 1),
+(10, 'History of the World', 40.00, 2), (11, 'LEGO Star Wars Set', 180.00, 5), (12, 'Yoga Mat', 30.00, 6),
+(13, 'Board Game "Settlers of Catan"', 45.00, 5), (14, 'Running Shoes Nike', 120.00, 6), (15, 'Kindle Paperwhite', 140.00, 1),
+(16, 'Shampoo Head & Shoulders', 8.00, 7), (17, 'Sunscreen La Roche-Posay', 22.00, 7), (18, 'Car Wax 3M', 18.00, 8),
+(19, 'Engine Oil Castrol', 35.00, 8), (20, 'Garden Hose', 25.00, 9), (21, 'Power Drill Bosch', 90.00, 9),
+(22, 'Dog Food Pedigree', 50.00, 10), (23, 'Cat Litter', 15.00, 10), (24, 'Smart TV LG 55 inch', 800.00, 1),
+(25, 'The Hobbit by J.R.R. Tolkien', 18.00, 2), (26, 'Coffee Maker Nespresso', 200.00, 3), (27, 'Men\'s Jeans Levi\'s', 80.00, 4),
+(28, 'Monopoly Board Game', 30.00, 5), (29, 'Basketball Spalding', 28.00, 6), (30, 'Lipstick MAC', 20.00, 7),
+(31, 'Car Air Freshener', 5.00, 8), (32, 'Lawn Mower', 350.00, 9), (33, 'Fish Tank', 100.00, 10),
+(34, 'Gaming Mouse Logitech', 60.00, 1), (35, 'Sapiens by Yuval Noah Harari', 25.00, 2), (36, 'Microwave Oven Sharp', 120.00, 3),
+(37, 'Women\'s Handbag', 95.00, 4), (38, 'Jigsaw Puzzle 1000 pieces', 20.00, 5), (39, 'Dumbbell Set', 60.00, 6),
+(40, 'Face Cream Olay', 30.00, 7), (41, 'Car Cover', 40.00, 8), (42, 'Shovel', 20.00, 9), (43, 'Bird Cage', 70.00, 10);
+
+-- Populate Orders & Order_Items (100+ rows)
+-- This part is a bit long, but it creates a rich dataset for practice.
+-- We will use a loop-like structure in SQL to generate this data, but for a script, we list them out.
+-- In a real scenario, you'd use a procedural language to generate this.
+INSERT INTO Orders (order_id, customer_id, employee_id, order_date, shipped_date, shipper_id) VALUES
+(1, 1, 3, '2025-06-10', '2025-06-12', 1), (2, 2, 4, '2025-06-11', '2025-06-14', 2), (3, 1, 3, '2025-06-12', '2025-06-15', 1),
+(4, 3, 5, '2025-06-12', '2025-06-16', 3), (5, 5, 7, '2025-06-13', '2025-06-18', 4), (6, 8, 9, '2025-06-14', '2025-06-19', 5),
+(7, 12, 11, '2025-06-15', '2025-06-20', 1), (8, 15, 13, '2025-06-15', '2025-06-21', 2), (9, 20, 15, '2025-06-16', '2025-06-22', 3),
+(10, 25, 17, '2025-06-17', '2025-06-24', 4), (11, 30, 19, '2025-06-18', '2025-06-25', 5), (12, 4, 6, '2025-06-18', '2025-06-26', 1),
+(13, 9, 8, '2025-06-19', '2025-06-27', 2), (14, 14, 10, '2025-06-20', '2025-06-28', 3), (15, 19, 12, '2025-06-21', '2025-06-29', 4),
+(16, 24, 14, '2025-06-22', '2025-06-30', 5), (17, 29, 16, '2025-06-23', '2025-07-01', 1), (18, 7, 18, '2025-06-24', '2025-07-02', 2),
+(19, 13, 20, '2025-06-25', '2025-07-03', 3), (20, 18, 22, '2025-06-26', '2025-07-04', 4), (21, 23, 24, '2025-06-27', '2025-07-05', 5),
+(22, 28, 26, '2025-06-28', '2025-07-06', 1), (23, 6, 28, '2025-06-29', '2025-07-07', 2), (24, 11, 30, '2025-06-30', '2025-07-08', 3),
+(25, 17, 21, '2025-07-01', NULL, NULL), (26, 22, 23, '2025-07-02', NULL, NULL), (27, 27, 25, '2025-07-03', NULL, NULL),
+(28, 32, 27, '2025-07-04', NULL, NULL), (29, 10, 29, '2025-07-05', NULL, NULL), (30, 16, 3, '2025-07-06', NULL, NULL),
+(31, 21, 5, '2025-07-07', NULL, NULL), (32, 26, 7, '2025-07-08', NULL, NULL), (33, 31, 9, '2025-07-09', NULL, NULL),
+(34, 1, 11, '2025-07-10', NULL, NULL), (35, 2, 13, '2025-07-11', NULL, NULL), (36, 3, 15, '2025-07-12', NULL, NULL),
+(37, 5, 17, '2025-07-13', NULL, NULL), (38, 8, 19, '2025-07-14', NULL, NULL), (39, 12, 21, '2025-07-15', NULL, NULL),
+(40, 15, 23, '2025-07-16', NULL, NULL), (41, 20, 25, '2025-07-17', NULL, NULL), (42, 25, 27, '2025-07-18', NULL, NULL),
+(43, 30, 29, '2025-07-19', NULL, NULL), (44, 4, 4, '2025-07-20', NULL, NULL), (45, 9, 6, '2025-07-21', NULL, NULL),
+(46, 14, 8, '2025-07-22', NULL, NULL), (47, 19, 10, '2025-07-23', NULL, NULL), (48, 24, 12, '2025-07-24', NULL, NULL),
+(49, 29, 14, '2025-07-25', NULL, NULL), (50, 7, 16, '2025-07-26', NULL, NULL);
+
+-- Generate more orders to exceed 100
+INSERT INTO Orders (customer_id, employee_id, order_date, shipped_date, shipper_id)
+SELECT
+    floor(rand() * 32) + 1,
+    floor(rand() * 30) + 1,
+    date_add('2025-07-27', INTERVAL floor(rand() * 30) DAY),
+    NULL,
+    NULL
+FROM
+    (SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4 UNION ALL SELECT 5) t1,
+    (SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4 UNION ALL SELECT 5) t2,
+    (SELECT 1 UNION ALL SELECT 2) t3;
+
+INSERT INTO Order_Items (order_id, product_id, quantity, list_price) VALUES
+(1, 1, 1, 2500.00), (1, 3, 2, 15.00), (2, 5, 1, 150.00), (2, 7, 3, 25.00), (3, 2, 1, 1200.00),
+(4, 4, 1, 20.00), (4, 8, 1, 50.00), (4, 6, 1, 75.00), (5, 7, 5, 25.00), (6, 1, 1, 2500.00),
+(7, 9, 1, 250.00), (8, 11, 1, 180.00), (9, 12, 2, 30.00), (10, 14, 1, 120.00), (11, 15, 1, 140.00),
+(12, 3, 1, 15.00), (13, 5, 2, 150.00), (14, 16, 5, 8.00), (15, 17, 2, 22.00), (16, 18, 1, 18.00),
+(17, 19, 1, 35.00), (18, 20, 1, 25.00), (19, 21, 1, 90.00), (20, 22, 2, 50.00), (21, 23, 3, 15.00),
+(22, 24, 1, 800.00), (23, 25, 4, 18.00), (24, 26, 1, 200.00), (25, 27, 2, 80.00), (26, 28, 1, 30.00),
+(27, 29, 1, 28.00), (28, 30, 3, 20.00), (29, 31, 5, 5.00), (30, 32, 1, 350.00), (31, 33, 1, 100.00),
+(32, 34, 2, 60.00), (33, 35, 1, 25.00), (34, 36, 1, 120.00), (35, 37, 1, 95.00), (36, 38, 2, 20.00),
+(37, 39, 1, 60.00), (38, 40, 3, 30.00), (39, 41, 1, 40.00), (40, 42, 2, 20.00), (41, 43, 1, 70.00),
+(42, 1, 1, 2500.00), (43, 2, 1, 1200.00), (44, 10, 5, 40.00), (45, 13, 2, 45.00), (46, 22, 1, 50.00),
+(47, 30, 2, 20.00), (48, 40, 1, 30.00), (49, 4, 3, 20.00), (50, 8, 2, 50.00);
+
+-- Generate more order items for the new orders
+INSERT INTO Order_Items (order_id, product_id, quantity, list_price)
+SELECT
+    o.order_id,
+    p.product_id,
+    floor(rand() * 5) + 1,
+    p.unit_price
+FROM
+    Orders o
+JOIN
+    Products p ON p.product_id = floor(rand() * 43) + 1
+WHERE
+    o.order_id > 50
+LIMIT 150; -- Add 150 more line items
+

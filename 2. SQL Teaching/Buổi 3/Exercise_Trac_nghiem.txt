@@ -1,0 +1,77 @@
+
+Câu 1: Truy vấn nào sau đây sẽ trả về tất cả các sản phẩm (Products) thuộc danh mục 'Electronics' (category_id = 1) VÀ có giá (unit_price) dưới $1000?
+
+A. SELECT * FROM Products WHERE category_id = 1 OR unit_price < 1000;
+B. SELECT * FROM Products WHERE category_id = 1 AND unit_price < 1000;
+C. SELECT * FROM Products WHERE category_id = 1 AND unit_price > 1000;
+D. SELECT * FROM Products WHERE category_id IN (1) OR unit_price < 1000;
+
+
+
+Câu 2: Để tìm 5 nhân viên (Employees) được tuyển dụng gần đây nhất, bạn sẽ sử dụng cú pháp nào?
+
+A. SELECT * FROM Employees LIMIT 5;
+B. SELECT * FROM Employees ORDER BY hire_date ASC LIMIT 5;
+C. SELECT * FROM Employees ORDER BY hire_date DESC LIMIT 5;
+D. SELECT TOP 5 * FROM Employees ORDER BY hire_date DESC;
+
+
+Câu 3: Truy vấn nào sẽ đếm tổng số khách hàng (Customers) không cung cấp số điện thoại (phone_number)?
+
+A. SELECT COUNT(*) FROM Customers WHERE phone_number = '';
+B. SELECT SUM(customer_id) FROM Customers WHERE phone_number IS NULL;
+C. SELECT COUNT(customer_id) FROM Customers WHERE phone_number IS NULL;
+D. SELECT COUNT(*) FROM Customers WHERE phone_number != NULL;
+
+Phần 2: Khái niệm Cơ sở dữ liệu và JOIN
+Câu 4: Mục đích chính của một Khóa chính (Primary Key) là gì?
+
+A. Để sắp xếp dữ liệu trong bảng theo thứ tự mặc định.
+B. Để liên kết một bảng với một bảng khác.
+C. Để đảm bảo mỗi hàng (record) trong bảng là duy nhất.
+D. Để lưu trữ thông tin quan trọng nhất của bảng.
+
+Câu 5: Trong bảng Orders, cột customer_id đóng vai trò gì?
+
+A. Khóa chính (Primary Key) của bảng Orders.
+B. Chỉ là một cột dữ liệu thông thường không có chức năng đặc biệt.
+C. Khóa ngoại (Foreign Key) liên kết đến bảng Customers.
+D. Một chỉ mục (Index) để tăng tốc độ truy vấn.
+
+
+Câu 6: Khi bạn thực hiện INNER JOIN giữa bảng Customers và bảng Orders dựa trên cột customer_id, kết quả sẽ chứa điều gì?
+
+A. Tất cả khách hàng, bất kể họ có đặt hàng hay không.
+B. Tất cả các đơn hàng, ngay cả khi customer_id không tồn tại.
+C. Chỉ những khách hàng đã đặt ít nhất một đơn hàng và các đơn hàng tương ứng của họ.
+D. Tất cả các hàng từ cả hai bảng được kết hợp lại.
+
+
+Câu 7: Bạn muốn tìm tất cả các sản phẩm (Products) chưa bao giờ được bán. Bạn nên sử dụng loại JOIN nào và điều kiện WHERE nào?
+
+A. INNER JOIN với Order_Items.
+B. LEFT JOIN từ Products sang Order_Items, với điều kiện WHERE Order_Items.order_id IS NULL.
+C. RIGHT JOIN từ Products sang Order_Items.
+D. FULL OUTER JOIN mà không có điều kiện WHERE.
+
+Câu 8: Lựa chọn nào mô tả đúng nhất về sự khác biệt giữa LEFT JOIN và RIGHT JOIN?
+
+A. LEFT JOIN nhanh hơn RIGHT JOIN.
+B. LEFT JOIN trả về tất cả các hàng từ bảng bên trái, trong khi RIGHT JOIN trả về tất cả các hàng từ bảng bên phải.
+C. LEFT JOIN chỉ có thể được sử dụng trên hai bảng, trong khi RIGHT JOIN có thể nối nhiều bảng.
+D. Không có sự khác biệt, chúng hoàn toàn giống nhau.
+
+Câu 9: Trong cú pháp JOIN, mệnh đề ON được sử dụng để làm gì?
+
+A. Để lọc kết quả cuối cùng sau khi các bảng đã được nối.
+B. Để chỉ định điều kiện kết hợp, tức là cách các bảng liên quan đến nhau.
+C. Để đổi tên các cột trong kết quả.
+D. Để sắp xếp các hàng trong kết quả.
+
+
+Câu 10: Để tạo một báo cáo hiển thị customer_first_name, product_name, và shipper_name cho một đơn hàng cụ thể, bạn cần JOIN ít nhất bao nhiêu bảng?
+
+A. 2 bảng
+B. 3 bảng
+C. 4 bảng
+D. 5 bảng (Orders, Customers, Order_Items, Products, Shippers)

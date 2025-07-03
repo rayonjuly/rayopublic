@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Planner.md",
+                "file": "SQL Teaching.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Planner"
+              "title": "SQL Teaching"
             }
           },
           {
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Planner.md",
+                "file": "SQL Teaching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Planner"
+              "title": "Backlinks for SQL Teaching"
             }
           },
           {
@@ -156,12 +156,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Planner.md",
+                "file": "SQL Teaching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Planner"
+              "title": "Outgoing links from SQL Teaching"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Planner.md",
+                "file": "SQL Teaching.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Planner"
+              "title": "Outline of SQL Teaching"
             }
           }
         ]
@@ -213,9 +213,9 @@
   },
   "active": "74911b6b66b83bb3",
   "lastOpenFiles": [
+    "Planner.md",
     "MOC Data Science.md",
     "Home.md",
-    "Planner.md",
     "MOC Personal.md",
     "SQL Teaching.md",
     "Welcome.md"

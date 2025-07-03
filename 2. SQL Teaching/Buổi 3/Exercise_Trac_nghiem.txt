@@ -23,7 +23,6 @@ B. SELECT SUM(customer_id) FROM Customers WHERE phone_number IS NULL;
 C. SELECT COUNT(customer_id) FROM Customers WHERE phone_number IS NULL;
 D. SELECT COUNT(*) FROM Customers WHERE phone_number != NULL;
 
-Phần 2: Khái niệm Cơ sở dữ liệu và JOIN
 Câu 4: Mục đích chính của một Khóa chính (Primary Key) là gì?
 
 A. Để sắp xếp dữ liệu trong bảng theo thứ tự mặc định.
@@ -74,4 +73,4 @@ Câu 10: Để tạo một báo cáo hiển thị customer_first_name, product_n
 A. 2 bảng
 B. 3 bảng
 C. 4 bảng
-D. 5 bảng (Orders, Customers, Order_Items, Products, Shippers)
+D. 5 bảng

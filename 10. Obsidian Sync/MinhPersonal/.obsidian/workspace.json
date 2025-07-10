@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL Teaching.md",
+                "file": "Planner.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL Teaching"
+              "title": "Planner"
             }
           },
           {
@@ -213,11 +213,11 @@
   },
   "active": "74911b6b66b83bb3",
   "lastOpenFiles": [
+    "SQL Teaching.md",
     "Planner.md",
     "MOC Data Science.md",
     "Home.md",
     "MOC Personal.md",
-    "SQL Teaching.md",
     "Welcome.md"
   ]
 }

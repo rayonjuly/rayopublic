@@ -1,0 +1,32 @@
+--------------------------
+-- Table: dim_date
+--------------------------
+Dim_Date = 
+ADDCOLUMNS(
+    CALENDAR(
+        DATE(2025,1,1)
+        ,DATE(2025,12,31)
+    )
+    ,"year_month", CONVERT(FORMAT([Date], "YYYYMM"), INTEGER)
+)
+
+--------------------------
+-- Table: fact_sales
+--------------------------
+doanh_thu = 
+Fact_Sales[so_luong] * Fact_Sales[gia_ban]
+
+loi_nhuan_1sp = 
+Fact_Sales[gia_ban] - Fact_Sales[gia_von]
+
+loi_nhuan = 
+Fact_Sales[so_luong] * Fact_Sales[loi_nhuan_1sp]
+
+
+--------------------------
+-- Công thức tính toán
+--------------------------
+tong_doanh_thu = 
+SUM(
+    Fact_Sales[doanh_thu]
+)

@@ -1,5 +1,5 @@
 --------------------------
--- Table: dim_date
+-- Tạo bảng: dim_date
 --------------------------
 Dim_Date = 
 ADDCOLUMNS(
@@ -7,11 +7,11 @@ ADDCOLUMNS(
         DATE(2025,1,1)
         ,DATE(2025,12,31)
     )
-    ,"year_month", CONVERT(FORMAT([Date], "YYYYMM"), INTEGER)
+    ,"year_month",FORMAT([Date], "YYYY-MM")
 )
 
 --------------------------
--- Table: fact_sales
+-- Tạo các cột tính mới (calculated columns) cho: fact_sales
 --------------------------
 doanh_thu = 
 Fact_Sales[so_luong] * Fact_Sales[gia_ban]
@@ -24,9 +24,36 @@ Fact_Sales[so_luong] * Fact_Sales[loi_nhuan_1sp]
 
 
 --------------------------
--- Công thức tính toán
+-- Công thức tính toán (measure)
 --------------------------
 tong_doanh_thu = 
 SUM(
     Fact_Sales[doanh_thu]
+)
+
+tong_target_doanhthu = 
+SUM(
+    Fact_Target[target_doanhthu]
+)
+
+%HT_doanh_thu = 
+DIVIDE(
+    [tong_doanh_thu]
+    ,[tong_target_doanhthu]
+)
+
+tong_loi_nhuan = 
+SUM(
+    Fact_Sales[loi_nhuan]
+)
+
+tong_target_loinhuan = 
+SUM(
+    Fact_Target[target_loinhuan]
+)
+
+%HT_loi_nhuan = 
+DIVIDE(
+    [tong_loi_nhuan]
+    ,[tong_target_loinhuan]
 )

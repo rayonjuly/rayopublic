@@ -57,3 +57,20 @@ DIVIDE(
     [tong_loi_nhuan]
     ,[tong_target_loinhuan]
 )
+
+SLKH = 
+DISTINCTCOUNT(
+    Fact_Sales[customer_id]
+)
+
+Doanhthu_TB_1_KH = 
+DIVIDE(
+    [tong_doanh_thu]
+    ,[SLKH]
+)
+
+Loinhuan_TB_1_KH = 
+DIVIDE(
+    [tong_loi_nhuan]
+    ,[SLKH]
+)

@@ -1,0 +1,301 @@
+﻿Customer_ID,GioiTinh,NhomTuoi,PhanLoaiKhachHang,KenhTiepCan,MucThuNhap,NgheNghiep
+CUST_001,Nữ,35-44,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Giáo viên
+CUST_002,Nam,35-44,VIP,Tìm kiếm tự nhiên,Dưới 15 triệu,Kinh doanh tự do
+CUST_003,Nữ,55-65,Khách hàng mới,Mạng xã hội,Dưới 15 triệu,Kinh doanh tự do
+CUST_004,Nữ,25-34,Khách hàng thân thiết,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_005,Nữ,25-34,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Giáo viên
+CUST_006,Nữ,35-44,Khách hàng mới,Giới thiệu,30 - 50 triệu,Kỹ sư
+CUST_007,Nữ,25-34,Khách hàng thân thiết,Tìm kiếm tự nhiên,Dưới 15 triệu,Nhân viên văn phòng
+CUST_008,Nam,35-44,VIP,Email marketing,30 - 50 triệu,Kinh doanh tự do
+CUST_009,Nữ,25-34,Khách hàng thân thiết,Quảng cáo trả phí,Dưới 15 triệu,Sinh viên
+CUST_010,Nữ,18-24,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Sinh viên
+CUST_011,Nữ,35-44,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Bác sĩ
+CUST_012,Nữ,55-65,Khách hàng thân thiết,Mạng xã hội,30 - 50 triệu,Nhân viên văn phòng
+CUST_013,Khác,18-24,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Nhân viên văn phòng
+CUST_014,Nam,18-24,Khách hàng thân thiết,Tìm kiếm tự nhiên,50 - 100 triệu,Kỹ sư
+CUST_015,Nam,45-54,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Kỹ sư
+CUST_016,Nữ,55-65,VIP,Mạng xã hội,Dưới 15 triệu,Giáo viên
+CUST_017,Nữ,25-34,VIP,Quảng cáo trả phí,15 - 30 triệu,Sinh viên
+CUST_018,Nữ,55-65,Khách hàng mới,Giới thiệu,Trên 100 triệu,Nhân viên văn phòng
+CUST_019,Nữ,35-44,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Kinh doanh tự do
+CUST_020,Nam,55-65,Khách hàng mới,Giới thiệu,30 - 50 triệu,Nhân viên văn phòng
+CUST_021,Nữ,45-54,Khách hàng mới,Quảng cáo trả phí,50 - 100 triệu,Kỹ sư
+CUST_022,Nam,35-44,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Kinh doanh tự do
+CUST_023,Nữ,18-24,Khách hàng thân thiết,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_024,Nam,18-24,Khách hàng mới,Quảng cáo trả phí,50 - 100 triệu,Nhân viên văn phòng
+CUST_025,Nam,35-44,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Sinh viên
+CUST_026,Nữ,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Sinh viên
+CUST_027,Nam,35-44,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Kinh doanh tự do
+CUST_028,Nam,35-44,VIP,Giới thiệu,Dưới 15 triệu,Kinh doanh tự do
+CUST_029,Nữ,45-54,Khách hàng mới,Tìm kiếm tự nhiên,Dưới 15 triệu,Giáo viên
+CUST_030,Nữ,25-34,Khách hàng thân thiết,Mạng xã hội,30 - 50 triệu,Sinh viên
+CUST_031,Nam,25-34,Khách hàng thân thiết,Quảng cáo trả phí,15 - 30 triệu,Bác sĩ
+CUST_032,Nữ,45-54,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Nhân viên văn phòng
+CUST_033,Nam,18-24,Khách hàng thân thiết,Mạng xã hội,30 - 50 triệu,Sinh viên
+CUST_034,Nữ,55-65,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Bác sĩ
+CUST_035,Nữ,25-34,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Kỹ sư
+CUST_036,Nữ,18-24,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Bác sĩ
+CUST_037,Nam,25-34,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Giáo viên
+CUST_038,Nữ,25-34,Khách hàng mới,Giới thiệu,30 - 50 triệu,Nhân viên văn phòng
+CUST_039,Nam,35-44,Khách hàng thân thiết,Tìm kiếm tự nhiên,Trên 100 triệu,Kỹ sư
+CUST_040,Nữ,35-44,Khách hàng mới,Giới thiệu,50 - 100 triệu,Kỹ sư
+CUST_041,Nữ,18-24,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Sinh viên
+CUST_042,Nam,25-34,Khách hàng mới,Email marketing,50 - 100 triệu,Sinh viên
+CUST_043,Nữ,45-54,Khách hàng mới,Giới thiệu,15 - 30 triệu,Sinh viên
+CUST_044,Nam,25-34,Khách hàng thân thiết,Quảng cáo trả phí,15 - 30 triệu,Sinh viên
+CUST_045,Nữ,25-34,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_046,Nam,45-54,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Nhân viên văn phòng
+CUST_047,Nam,25-34,Khách hàng thân thiết,Quảng cáo trả phí,30 - 50 triệu,Sinh viên
+CUST_048,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Nội trợ
+CUST_049,Nam,45-54,Khách hàng mới,Tìm kiếm tự nhiên,50 - 100 triệu,Nhân viên văn phòng
+CUST_050,Nữ,45-54,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_051,Nữ,35-44,Khách hàng thân thiết,Email marketing,15 - 30 triệu,Kỹ sư
+CUST_052,Nam,35-44,Khách hàng mới,Giới thiệu,30 - 50 triệu,Kinh doanh tự do
+CUST_053,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_054,Khác,18-24,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Nội trợ
+CUST_055,Nữ,18-24,Khách hàng thân thiết,Quảng cáo trả phí,50 - 100 triệu,Nhân viên văn phòng
+CUST_056,Nữ,25-34,Khách hàng thân thiết,Email marketing,30 - 50 triệu,Nhân viên văn phòng
+CUST_057,Nữ,35-44,Khách hàng mới,Giới thiệu,Dưới 15 triệu,Bác sĩ
+CUST_058,Nữ,55-65,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_059,Nữ,45-54,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Nhân viên văn phòng
+CUST_060,Nam,45-54,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_061,Nam,35-44,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Bác sĩ
+CUST_062,Nữ,55-65,Khách hàng mới,Email marketing,50 - 100 triệu,Kinh doanh tự do
+CUST_063,Nam,25-34,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_064,Nam,35-44,Khách hàng thân thiết,Mạng xã hội,Dưới 15 triệu,Nhân viên văn phòng
+CUST_065,Nam,35-44,Khách hàng thân thiết,Mạng xã hội,30 - 50 triệu,Giáo viên
+CUST_066,Nữ,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_067,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Kỹ sư
+CUST_068,Nữ,45-54,Khách hàng mới,Giới thiệu,Dưới 15 triệu,Kinh doanh tự do
+CUST_069,Nam,45-54,Khách hàng thân thiết,Giới thiệu,30 - 50 triệu,Sinh viên
+CUST_070,Nữ,35-44,Khách hàng mới,Giới thiệu,15 - 30 triệu,Kinh doanh tự do
+CUST_071,Nam,35-44,Khách hàng mới,Giới thiệu,30 - 50 triệu,Nhân viên văn phòng
+CUST_072,Nữ,45-54,Khách hàng mới,Email marketing,30 - 50 triệu,Giáo viên
+CUST_073,Nữ,35-44,Khách hàng mới,Giới thiệu,50 - 100 triệu,Kinh doanh tự do
+CUST_074,Nam,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Kỹ sư
+CUST_075,Nam,25-34,Khách hàng thân thiết,Email marketing,50 - 100 triệu,Nhân viên văn phòng
+CUST_076,Nữ,25-34,Khách hàng thân thiết,Giới thiệu,50 - 100 triệu,Nhân viên văn phòng
+CUST_077,Khác,35-44,Khách hàng thân thiết,Email marketing,15 - 30 triệu,Kinh doanh tự do
+CUST_078,Nam,55-65,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_079,Nữ,35-44,Khách hàng thân thiết,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_080,Nữ,18-24,VIP,Email marketing,15 - 30 triệu,Nhân viên văn phòng
+CUST_081,Nữ,18-24,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Nhân viên văn phòng
+CUST_082,Nữ,18-24,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Nhân viên văn phòng
+CUST_083,Nam,18-24,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Nhân viên văn phòng
+CUST_084,Nam,18-24,Khách hàng thân thiết,Mạng xã hội,15 - 30 triệu,Giáo viên
+CUST_085,Nam,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Sinh viên
+CUST_086,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Giáo viên
+CUST_087,Nam,55-65,Khách hàng mới,Giới thiệu,50 - 100 triệu,Sinh viên
+CUST_088,Nữ,35-44,Khách hàng mới,Quảng cáo trả phí,50 - 100 triệu,Nhân viên văn phòng
+CUST_089,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_090,Nữ,25-34,Khách hàng mới,Giới thiệu,15 - 30 triệu,Nhân viên văn phòng
+CUST_091,Nữ,25-34,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Kinh doanh tự do
+CUST_092,Nam,25-34,Khách hàng mới,Email marketing,30 - 50 triệu,Sinh viên
+CUST_093,Nam,45-54,Khách hàng mới,Tìm kiếm tự nhiên,Dưới 15 triệu,Giáo viên
+CUST_094,Nữ,35-44,Khách hàng mới,Mạng xã hội,Dưới 15 triệu,Kỹ sư
+CUST_095,Nữ,25-34,Khách hàng mới,Email marketing,Dưới 15 triệu,Nhân viên văn phòng
+CUST_096,Nữ,25-34,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Sinh viên
+CUST_097,Nam,18-24,Khách hàng thân thiết,Tìm kiếm tự nhiên,Dưới 15 triệu,Sinh viên
+CUST_098,Nữ,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_099,Khác,25-34,Khách hàng thân thiết,Email marketing,Dưới 15 triệu,Bác sĩ
+CUST_100,Nam,45-54,Khách hàng thân thiết,Mạng xã hội,30 - 50 triệu,Nhân viên văn phòng
+CUST_101,Nam,25-34,VIP,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_102,Nữ,25-34,Khách hàng mới,Giới thiệu,15 - 30 triệu,Nhân viên văn phòng
+CUST_103,Nam,35-44,Khách hàng mới,Giới thiệu,Dưới 15 triệu,Nội trợ
+CUST_104,Nữ,18-24,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Kỹ sư
+CUST_105,Nam,45-54,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Kinh doanh tự do
+CUST_106,Nam,45-54,Khách hàng mới,Quảng cáo trả phí,Dưới 15 triệu,Bác sĩ
+CUST_107,Nữ,18-24,Khách hàng mới,Tìm kiếm tự nhiên,50 - 100 triệu,Kinh doanh tự do
+CUST_108,Nữ,18-24,Khách hàng thân thiết,Mạng xã hội,30 - 50 triệu,Giáo viên
+CUST_109,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Giáo viên
+CUST_110,Nữ,45-54,VIP,Tìm kiếm tự nhiên,50 - 100 triệu,Nhân viên văn phòng
+CUST_111,Nữ,35-44,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_112,Nữ,55-65,VIP,Mạng xã hội,Dưới 15 triệu,Kỹ sư
+CUST_113,Nữ,25-34,Khách hàng thân thiết,Quảng cáo trả phí,30 - 50 triệu,Sinh viên
+CUST_114,Nam,18-24,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Nội trợ
+CUST_115,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Sinh viên
+CUST_116,Nam,35-44,Khách hàng mới,Giới thiệu,15 - 30 triệu,Sinh viên
+CUST_117,Nữ,55-65,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Nhân viên văn phòng
+CUST_118,Nữ,45-54,Khách hàng thân thiết,Mạng xã hội,15 - 30 triệu,Kinh doanh tự do
+CUST_119,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Nhân viên văn phòng
+CUST_120,Nam,35-44,Khách hàng mới,Email marketing,15 - 30 triệu,Nhân viên văn phòng
+CUST_121,Nữ,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_122,Nữ,18-24,Khách hàng mới,Email marketing,Dưới 15 triệu,Kỹ sư
+CUST_123,Nữ,25-34,Khách hàng mới,Email marketing,15 - 30 triệu,Nhân viên văn phòng
+CUST_124,Nữ,35-44,Khách hàng mới,Tìm kiếm tự nhiên,Dưới 15 triệu,Sinh viên
+CUST_125,Nam,35-44,Khách hàng mới,Giới thiệu,30 - 50 triệu,Nội trợ
+CUST_126,Nam,25-34,Khách hàng thân thiết,Giới thiệu,50 - 100 triệu,Kỹ sư
+CUST_127,Nữ,35-44,Khách hàng mới,Giới thiệu,30 - 50 triệu,Kỹ sư
+CUST_128,Nam,35-44,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Kinh doanh tự do
+CUST_129,Nam,18-24,Khách hàng thân thiết,Mạng xã hội,15 - 30 triệu,Bác sĩ
+CUST_130,Nữ,25-34,VIP,Giới thiệu,30 - 50 triệu,Bác sĩ
+CUST_131,Nữ,18-24,Khách hàng thân thiết,Mạng xã hội,30 - 50 triệu,Kỹ sư
+CUST_132,Nữ,25-34,Khách hàng thân thiết,Email marketing,15 - 30 triệu,Sinh viên
+CUST_133,Nữ,25-34,Khách hàng thân thiết,Quảng cáo trả phí,Dưới 15 triệu,Kỹ sư
+CUST_134,Nam,25-34,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_135,Nam,18-24,VIP,Giới thiệu,15 - 30 triệu,Kỹ sư
+CUST_136,Nữ,25-34,Khách hàng mới,Mạng xã hội,50 - 100 triệu,Sinh viên
+CUST_137,Nữ,45-54,VIP,Giới thiệu,15 - 30 triệu,Giáo viên
+CUST_138,Nữ,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Giáo viên
+CUST_139,Nữ,25-34,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Kỹ sư
+CUST_140,Nữ,45-54,Khách hàng mới,Quảng cáo trả phí,50 - 100 triệu,Nhân viên văn phòng
+CUST_141,Nam,45-54,Khách hàng mới,Email marketing,30 - 50 triệu,Giáo viên
+CUST_142,Nữ,45-54,Khách hàng thân thiết,Quảng cáo trả phí,15 - 30 triệu,Nhân viên văn phòng
+CUST_143,Khác,25-34,Khách hàng mới,Email marketing,Dưới 15 triệu,Sinh viên
+CUST_144,Nam,55-65,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_145,Nữ,18-24,Khách hàng mới,Quảng cáo trả phí,Dưới 15 triệu,Nhân viên văn phòng
+CUST_146,Nữ,35-44,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Kinh doanh tự do
+CUST_147,Nữ,35-44,Khách hàng mới,Giới thiệu,50 - 100 triệu,Nhân viên văn phòng
+CUST_148,Nam,18-24,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_149,Nam,45-54,Khách hàng mới,Tìm kiếm tự nhiên,Dưới 15 triệu,Nhân viên văn phòng
+CUST_150,Nam,35-44,Khách hàng thân thiết,Quảng cáo trả phí,Dưới 15 triệu,Nhân viên văn phòng
+CUST_151,Nam,45-54,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Giáo viên
+CUST_152,Nữ,35-44,Khách hàng thân thiết,Giới thiệu,Dưới 15 triệu,Kỹ sư
+CUST_153,Nam,35-44,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Kinh doanh tự do
+CUST_154,Nam,35-44,VIP,Quảng cáo trả phí,Dưới 15 triệu,Giáo viên
+CUST_155,Nam,55-65,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Kinh doanh tự do
+CUST_156,Nam,18-24,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_157,Nam,55-65,Khách hàng mới,Quảng cáo trả phí,50 - 100 triệu,Nhân viên văn phòng
+CUST_158,Nam,18-24,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_159,Nam,25-34,Khách hàng mới,Email marketing,15 - 30 triệu,Sinh viên
+CUST_160,Nữ,35-44,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Sinh viên
+CUST_161,Nam,45-54,Khách hàng mới,Giới thiệu,Dưới 15 triệu,Nhân viên văn phòng
+CUST_162,Nam,18-24,VIP,Giới thiệu,15 - 30 triệu,Kinh doanh tự do
+CUST_163,Khác,45-54,Khách hàng thân thiết,Email marketing,Trên 100 triệu,Kinh doanh tự do
+CUST_164,Nam,18-24,Khách hàng thân thiết,Quảng cáo trả phí,Dưới 15 triệu,Bác sĩ
+CUST_165,Nam,55-65,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Kỹ sư
+CUST_166,Nam,55-65,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Kinh doanh tự do
+CUST_167,Nữ,35-44,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_168,Nữ,25-34,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Nhân viên văn phòng
+CUST_169,Nữ,35-44,Khách hàng mới,Mạng xã hội,Dưới 15 triệu,Nhân viên văn phòng
+CUST_170,Nữ,25-34,Khách hàng thân thiết,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_171,Nữ,35-44,Khách hàng mới,Giới thiệu,15 - 30 triệu,Kinh doanh tự do
+CUST_172,Nữ,35-44,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_173,Nữ,45-54,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_174,Nam,18-24,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_175,Nam,55-65,Khách hàng thân thiết,Quảng cáo trả phí,15 - 30 triệu,Sinh viên
+CUST_176,Nam,45-54,Khách hàng mới,Mạng xã hội,Dưới 15 triệu,Nhân viên văn phòng
+CUST_177,Khác,18-24,VIP,Quảng cáo trả phí,30 - 50 triệu,Sinh viên
+CUST_178,Nam,35-44,Khách hàng thân thiết,Quảng cáo trả phí,30 - 50 triệu,Kỹ sư
+CUST_179,Nữ,45-54,Khách hàng thân thiết,Email marketing,Dưới 15 triệu,Kinh doanh tự do
+CUST_180,Nam,18-24,Khách hàng thân thiết,Mạng xã hội,30 - 50 triệu,Nhân viên văn phòng
+CUST_181,Nữ,18-24,Khách hàng mới,Tìm kiếm tự nhiên,50 - 100 triệu,Sinh viên
+CUST_182,Nữ,25-34,Khách hàng thân thiết,Giới thiệu,50 - 100 triệu,Nhân viên văn phòng
+CUST_183,Nữ,35-44,Khách hàng thân thiết,Mạng xã hội,Trên 100 triệu,Nhân viên văn phòng
+CUST_184,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,Dưới 15 triệu,Giáo viên
+CUST_185,Khác,18-24,VIP,Tìm kiếm tự nhiên,15 - 30 triệu,Kinh doanh tự do
+CUST_186,Nữ,45-54,Khách hàng thân thiết,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_187,Nam,18-24,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Sinh viên
+CUST_188,Nữ,55-65,Khách hàng thân thiết,Giới thiệu,15 - 30 triệu,Bác sĩ
+CUST_189,Nam,55-65,Khách hàng thân thiết,Mạng xã hội,50 - 100 triệu,Sinh viên
+CUST_190,Nam,35-44,VIP,Quảng cáo trả phí,50 - 100 triệu,Bác sĩ
+CUST_191,Nam,18-24,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Kinh doanh tự do
+CUST_192,Nam,25-34,Khách hàng mới,Mạng xã hội,Trên 100 triệu,Nội trợ
+CUST_193,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_194,Nữ,35-44,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Nhân viên văn phòng
+CUST_195,Nam,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Sinh viên
+CUST_196,Nữ,35-44,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_197,Nam,45-54,Khách hàng mới,Giới thiệu,50 - 100 triệu,Kinh doanh tự do
+CUST_198,Nữ,35-44,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Nội trợ
+CUST_199,Nam,25-34,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_200,Nữ,18-24,Khách hàng thân thiết,Giới thiệu,50 - 100 triệu,Kinh doanh tự do
+CUST_201,Nữ,18-24,VIP,Quảng cáo trả phí,30 - 50 triệu,Bác sĩ
+CUST_202,Nam,45-54,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Nhân viên văn phòng
+CUST_203,Nam,45-54,VIP,Quảng cáo trả phí,15 - 30 triệu,Kinh doanh tự do
+CUST_204,Nữ,25-34,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Kỹ sư
+CUST_205,Nam,18-24,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Kỹ sư
+CUST_206,Nữ,35-44,Khách hàng mới,Email marketing,15 - 30 triệu,Sinh viên
+CUST_207,Nam,35-44,Khách hàng mới,Email marketing,30 - 50 triệu,Kỹ sư
+CUST_208,Nam,25-34,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_209,Nam,35-44,VIP,Tìm kiếm tự nhiên,Dưới 15 triệu,Sinh viên
+CUST_210,Nam,45-54,Khách hàng thân thiết,Quảng cáo trả phí,50 - 100 triệu,Nhân viên văn phòng
+CUST_211,Nữ,45-54,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_212,Nữ,55-65,Khách hàng mới,Giới thiệu,30 - 50 triệu,Kỹ sư
+CUST_213,Nam,35-44,Khách hàng thân thiết,Quảng cáo trả phí,15 - 30 triệu,Kỹ sư
+CUST_214,Nam,35-44,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Sinh viên
+CUST_215,Nam,55-65,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_216,Nam,35-44,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nội trợ
+CUST_217,Nam,25-34,VIP,Giới thiệu,15 - 30 triệu,Kỹ sư
+CUST_218,Nam,18-24,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Kỹ sư
+CUST_219,Nam,55-65,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Sinh viên
+CUST_220,Nữ,25-34,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_221,Nam,35-44,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_222,Nam,55-65,VIP,Mạng xã hội,50 - 100 triệu,Kinh doanh tự do
+CUST_223,Nữ,35-44,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Kỹ sư
+CUST_224,Khác,45-54,Khách hàng thân thiết,Mạng xã hội,50 - 100 triệu,Kinh doanh tự do
+CUST_225,Nữ,25-34,Khách hàng mới,Mạng xã hội,Dưới 15 triệu,Kỹ sư
+CUST_226,Nữ,18-24,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Kỹ sư
+CUST_227,Nam,18-24,VIP,Quảng cáo trả phí,Dưới 15 triệu,Nhân viên văn phòng
+CUST_228,Nam,25-34,Khách hàng thân thiết,Giới thiệu,30 - 50 triệu,Sinh viên
+CUST_229,Nữ,35-44,Khách hàng thân thiết,Quảng cáo trả phí,15 - 30 triệu,Kinh doanh tự do
+CUST_230,Khác,25-34,Khách hàng thân thiết,Quảng cáo trả phí,30 - 50 triệu,Giáo viên
+CUST_231,Nữ,25-34,Khách hàng thân thiết,Mạng xã hội,Dưới 15 triệu,Nhân viên văn phòng
+CUST_232,Nam,18-24,Khách hàng thân thiết,Giới thiệu,30 - 50 triệu,Nhân viên văn phòng
+CUST_233,Nữ,25-34,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Nhân viên văn phòng
+CUST_234,Nữ,45-54,Khách hàng mới,Giới thiệu,Dưới 15 triệu,Giáo viên
+CUST_235,Nữ,25-34,VIP,Quảng cáo trả phí,15 - 30 triệu,Sinh viên
+CUST_236,Nam,18-24,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_237,Nam,25-34,Khách hàng mới,Quảng cáo trả phí,Trên 100 triệu,Sinh viên
+CUST_238,Nữ,35-44,Khách hàng thân thiết,Giới thiệu,15 - 30 triệu,Giáo viên
+CUST_239,Nữ,18-24,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Kinh doanh tự do
+CUST_240,Nam,35-44,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Nhân viên văn phòng
+CUST_241,Nữ,25-34,Khách hàng thân thiết,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_242,Nữ,25-34,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Nhân viên văn phòng
+CUST_243,Nữ,45-54,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_244,Nam,45-54,Khách hàng mới,Quảng cáo trả phí,Dưới 15 triệu,Sinh viên
+CUST_245,Nam,35-44,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Kỹ sư
+CUST_246,Nam,18-24,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Nhân viên văn phòng
+CUST_247,Nữ,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Sinh viên
+CUST_248,Nữ,35-44,Khách hàng mới,Mạng xã hội,Trên 100 triệu,Sinh viên
+CUST_249,Nữ,18-24,Khách hàng mới,Tìm kiếm tự nhiên,Dưới 15 triệu,Giáo viên
+CUST_250,Nữ,45-54,Khách hàng thân thiết,Giới thiệu,50 - 100 triệu,Kỹ sư
+CUST_251,Nam,45-54,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Sinh viên
+CUST_252,Nam,18-24,Khách hàng mới,Giới thiệu,30 - 50 triệu,Kinh doanh tự do
+CUST_253,Nam,35-44,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_254,Khác,18-24,Khách hàng mới,Tìm kiếm tự nhiên,30 - 50 triệu,Bác sĩ
+CUST_255,Nữ,35-44,Khách hàng mới,Tìm kiếm tự nhiên,Dưới 15 triệu,Kỹ sư
+CUST_256,Nam,35-44,Khách hàng thân thiết,Email marketing,Dưới 15 triệu,Nhân viên văn phòng
+CUST_257,Nam,35-44,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Nội trợ
+CUST_258,Nữ,35-44,Khách hàng thân thiết,Mạng xã hội,15 - 30 triệu,Nội trợ
+CUST_259,Nam,35-44,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Sinh viên
+CUST_260,Nam,25-34,VIP,Mạng xã hội,30 - 50 triệu,Kinh doanh tự do
+CUST_261,Nam,55-65,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Nhân viên văn phòng
+CUST_262,Nữ,25-34,Khách hàng thân thiết,Mạng xã hội,50 - 100 triệu,Sinh viên
+CUST_263,Nữ,25-34,VIP,Giới thiệu,15 - 30 triệu,Nhân viên văn phòng
+CUST_264,Nữ,35-44,Khách hàng mới,Giới thiệu,50 - 100 triệu,Nhân viên văn phòng
+CUST_265,Nữ,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Kỹ sư
+CUST_266,Nữ,55-65,Khách hàng thân thiết,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_267,Nam,18-24,Khách hàng mới,Tìm kiếm tự nhiên,15 - 30 triệu,Kinh doanh tự do
+CUST_268,Nam,35-44,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Kỹ sư
+CUST_269,Nữ,25-34,Khách hàng thân thiết,Giới thiệu,30 - 50 triệu,Bác sĩ
+CUST_270,Nữ,25-34,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_271,Nữ,18-24,Khách hàng mới,Tìm kiếm tự nhiên,Dưới 15 triệu,Nhân viên văn phòng
+CUST_272,Nam,35-44,Khách hàng mới,Giới thiệu,30 - 50 triệu,Kinh doanh tự do
+CUST_273,Nữ,25-34,Khách hàng mới,Mạng xã hội,15 - 30 triệu,Nội trợ
+CUST_274,Nữ,55-65,VIP,Quảng cáo trả phí,15 - 30 triệu,Kỹ sư
+CUST_275,Nữ,18-24,Khách hàng thân thiết,Giới thiệu,50 - 100 triệu,Giáo viên
+CUST_276,Nam,18-24,Khách hàng thân thiết,Tìm kiếm tự nhiên,Dưới 15 triệu,Nhân viên văn phòng
+CUST_277,Nữ,55-65,Khách hàng mới,Giới thiệu,30 - 50 triệu,Bác sĩ
+CUST_278,Nữ,25-34,Khách hàng mới,Giới thiệu,30 - 50 triệu,Kinh doanh tự do
+CUST_279,Nam,18-24,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Kinh doanh tự do
+CUST_280,Khác,35-44,Khách hàng thân thiết,Tìm kiếm tự nhiên,50 - 100 triệu,Kinh doanh tự do
+CUST_281,Nữ,25-34,Khách hàng mới,Quảng cáo trả phí,30 - 50 triệu,Nhân viên văn phòng
+CUST_282,Nữ,35-44,Khách hàng thân thiết,Quảng cáo trả phí,Dưới 15 triệu,Kinh doanh tự do
+CUST_283,Nữ,35-44,Khách hàng thân thiết,Mạng xã hội,30 - 50 triệu,Kỹ sư
+CUST_284,Nữ,18-24,Khách hàng thân thiết,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_285,Nữ,25-34,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Kinh doanh tự do
+CUST_286,Nam,55-65,VIP,Email marketing,50 - 100 triệu,Sinh viên
+CUST_287,Nữ,18-24,Khách hàng thân thiết,Email marketing,30 - 50 triệu,Kinh doanh tự do
+CUST_288,Nam,55-65,Khách hàng thân thiết,Tìm kiếm tự nhiên,15 - 30 triệu,Kỹ sư
+CUST_289,Nữ,18-24,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Kỹ sư
+CUST_290,Nam,45-54,Khách hàng thân thiết,Tìm kiếm tự nhiên,50 - 100 triệu,Nhân viên văn phòng
+CUST_291,Nữ,35-44,Khách hàng mới,Quảng cáo trả phí,15 - 30 triệu,Nội trợ
+CUST_292,Nam,18-24,Khách hàng mới,Mạng xã hội,50 - 100 triệu,Sinh viên
+CUST_293,Nữ,45-54,Khách hàng mới,Giới thiệu,15 - 30 triệu,Kinh doanh tự do
+CUST_294,Nam,35-44,Khách hàng mới,Mạng xã hội,30 - 50 triệu,Sinh viên
+CUST_295,Nữ,55-65,Khách hàng thân thiết,Quảng cáo trả phí,15 - 30 triệu,Nhân viên văn phòng
+CUST_296,Khác,18-24,Khách hàng thân thiết,Tìm kiếm tự nhiên,30 - 50 triệu,Nhân viên văn phòng
+CUST_297,Nữ,18-24,VIP,Mạng xã hội,15 - 30 triệu,Nhân viên văn phòng
+CUST_298,Nam,55-65,Khách hàng thân thiết,Email marketing,30 - 50 triệu,Kinh doanh tự do
+CUST_299,Nam,55-65,Khách hàng thân thiết,Giới thiệu,15 - 30 triệu,Nhân viên văn phòng
+CUST_300,Nam,18-24,Khách hàng thân thiết,Tìm kiếm tự nhiên,50 - 100 triệu,Nhân viên văn phòng

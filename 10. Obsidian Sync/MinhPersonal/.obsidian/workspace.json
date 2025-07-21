@@ -36,35 +36,21 @@
             }
           },
           {
-            "id": "59f4a0d51113a44c",
+            "id": "d16bfbc3a161eb79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MOC Data Science.md",
+                "file": "Bài tập SQL 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MOC Data Science"
-            }
-          },
-          {
-            "id": "654d394ae28cfcb5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SQL Teaching.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SQL Teaching"
+              "title": "Bài tập SQL 2"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -211,13 +197,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "74911b6b66b83bb3",
+  "active": "d16bfbc3a161eb79",
   "lastOpenFiles": [
-    "SQL Teaching.md",
     "MOC Data Science.md",
+    "Bài tập SQL 2.md",
+    "Home.md",
+    "Bài tập SQL.md",
+    "SQL Teaching.md",
     "MOC Personal.md",
     "Planner.md",
-    "Home.md",
     "Welcome.md"
   ]
 }

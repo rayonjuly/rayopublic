@@ -1,1 +1,2 @@
-[[SQL Teaching]]
+[[Bài tập SQL]]
+[[Bài tập SQL 2]]
